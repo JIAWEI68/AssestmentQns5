@@ -4,15 +4,14 @@ import java.util.Scanner;
 
 public class AssestmentQns5 {
     public static int computeProduct(int input1, int input2){
-        // declear intial value to 0
+        // declear intial value to 0 aka false
         int Product = 0;
-        if ((input1<10)||(input2>50)){
-            System.out.println("You are not in range!");
-        }
-        else {
+        if (input1>=10 && input2<=50)
+        // to test for positive values
+        {
             Product = input1 * input2;
         }
-        // return 0 when if statement activates
+
         return Product;
    }// return values if else statement activates
 
@@ -24,15 +23,10 @@ public class AssestmentQns5 {
         int a = keyboard.nextInt();
         System.out.println("Enter Second Number :");
         int b = keyboard.nextInt();
-        int product = computeProduct(a , b);
-        if (product > 0)
-            System.out.println("The product of "+ a + " and " + b + " are " + product );
-
-
-
-
-
-
+        if (computeProduct(a , b)> 0)
+            System.out.println("The product of "+ a + " and " + b + " are " + computeProduct(a , b) );
+        else
+            System.out.println("You are not in range!");
 
     }
 }
