@@ -13,20 +13,21 @@ public class AssestmentQns5 {
         }
 
         return Product;
-   }// return values if else statement activates
+    }// return values if else statement activates
 
     public static void main(String[] args) {
-
-
         Scanner keyboard = new Scanner(System.in);
         System.out.println("Enter First Number :");
         int a = keyboard.nextInt();
         System.out.println("Enter Second Number :");
         int b = keyboard.nextInt();
-        if (computeProduct(a , b)> 0){
-            System.out.println("The product of "+ a + " and " + b + " are " + computeProduct(a , b) );}
-        else{
-            System.out.println("You are not in range!");}
+        if (computeProduct(a , b)> 0)
+        {
+            System.out.println("The product of "+ a + " and " + b + " are " + computeProduct(a , b) );
+        } else
+        {
+            System.out.println("You are not in range!");
+        }
 
     }
 }
