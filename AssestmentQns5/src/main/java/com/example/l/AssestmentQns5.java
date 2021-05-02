@@ -6,7 +6,7 @@ public class AssestmentQns5 {
     public static int computeProduct(int input1, int input2){
         // declear intial value to 0 aka false
         int Product = 0;
-        if (input1>=10 && input2<=50)
+        if (((input1>=10)&&(input1<=50))&& ((input2<=50)&&(input2>=10)))
         // to test for positive values
         {
             Product = input1 * input2;
